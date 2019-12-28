@@ -1,0 +1,18 @@
+<h2>Compare Text</h2>
+
+<form action="{% url 'api' %}" method="post">
+  {% csrf_token %}
+  <div style="display: flex; height: 80vh; margin:0 5%">
+    <textarea style="width: -webkit-fill-available;" name="before">
+Before</textarea
+    >
+    <textarea style="width: -webkit-fill-available;" name="after">
+After</textarea
+    >
+  </div>
+  <input
+    type="submit"
+    value="Submit"
+    style="display: block; margin: auto; margin-top: 20px;"
+  />
+</form>
